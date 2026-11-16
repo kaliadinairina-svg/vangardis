@@ -97,9 +97,17 @@ python3 -m http.server 8000
 
 Далі відкрити http://localhost:8000
 
-## Фотографії
+## Фотографії та ліцензії
 
-Фотографії — з [Unsplash](https://unsplash.com), використані за [ліцензією Unsplash](https://unsplash.com/license).
+**Фон секції «Справи, які ми вели».** Кловський палац (будівля Верховного Суду України), Київ.
+Автор — [Wadco2](https://commons.wikimedia.org/wiki/User:Wadco2), джерело — [Вікісховище](https://commons.wikimedia.org/wiki/File:Klov_Palace._Listed_ID_80-382-0462._-_8_Pylypa_Orlyka_Street,_Pechersk_Raion,_Kiev._-_Pechersk_28_09_13_396.jpg), ліцензія — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+
+**Зміни:** небо замінено на знімок з Unsplash, кадр переведено в чорно-біле й підігнано під пропорції секції.
+Відповідно до умови share-alike **це похідне зображення (`images/cases-01.webp`) поширюється на умовах [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)**.
+
+**Решта фотографій** — з [Unsplash](https://unsplash.com), за [ліцензією Unsplash](https://unsplash.com/license).
+
+Умови CC BY-SA поширюються лише на зазначене вище зображення, не на код проєкту.
 
 ---
 

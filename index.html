@@ -7,6 +7,9 @@
 <meta name="description" content="Концепт сайту для адвокатського об’єднання у кримінальних справах. Навчальний кейс: вигадана фірма, вигадані дані.">
 <meta name="theme-color" content="#0E0D0C">
 <link rel="canonical" href="https://vangardis.vercel.app/">
+<link rel="alternate" hreflang="uk" href="https://vangardis.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://vangardis.vercel.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://vangardis.vercel.app/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -68,6 +71,13 @@ border:1px solid rgba(201,163,92,.55);color:#C9A35C;font:500 22px 'Cormorant SC'
 .r-title{min-height:55px}
 @media (min-width:1025px){.paper-cta{grid-template-columns:repeat(3,1fr)!important}.call-note{grid-column:3}}
 @media (max-width:760px){.r-title{min-height:0}}
+.lang{display:flex;align-items:center;gap:7px;font:600 12px/1 Manrope,sans-serif;letter-spacing:.1em}
+.lang-on{color:#C9A35C}
+.lang-sep{color:rgba(237,230,218,.3)}
+.lang-off{color:#A8A092;text-decoration:none;transition:color .2s ease}
+.lang-off:hover{color:#EDE6DA}
+.lang-off:focus-visible{outline:2px solid #C9A35C;outline-offset:3px;border-radius:3px}
+@media (max-width:1024px){.lang{display:none}}
 @media (max-width:1024px){
 .path{grid-template-columns:1fr;gap:0;margin-top:48px}
 .path .st{display:grid;grid-template-columns:56px 1fr;column-gap:20px;padding-bottom:30px}
@@ -100,7 +110,7 @@ footer{padding-bottom:96px!important}
 
 </style>
 <style>html{scroll-behavior:smooth}</style>
-<style id="fix-steps">@media (max-width:760px){.steps-col{padding:0!important;flex-basis:100%!important}.steps-col>div{max-width:none!important}}.sitbtn{background:rgba(237,230,218,.05);border:1px solid rgba(237,230,218,.16);color:#EDE6DA;transition:background-color .22s ease,border-color .22s ease,color .22s ease}.sb-hint{color:#CFC6B8;transition:color .22s ease}.sb-icon{background:rgba(237,230,218,.08);transition:background-color .22s ease}.sitbtn[aria-selected="true"]{background:#C9A35C;border-color:#C9A35C;color:#14110D}.sitbtn[aria-selected="true"] .sb-hint{color:#3A2F1E}.sitbtn[aria-selected="true"] .sb-icon{background:rgba(20,17,13,.12)}.sitbtn:hover{border-color:rgba(201,163,92,.7)}a,button,.tag,.navlink,.svc,.svc-call{transition:color .2s ease,background-color .2s ease,border-color .2s ease,opacity .2s ease}@keyframes swIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.sw-in{animation:swIn .26s ease both}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}#cursorRing{position:fixed;top:0;left:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1px solid rgba(201,163,92,.75);border-radius:999px;pointer-events:none;z-index:9999;opacity:0;transform:translate3d(-100px,-100px,0) scale(.6);transition:opacity .18s ease,transform .18s ease,border-color .18s ease,width .18s ease,height .18s ease;will-change:transform}#cursorRing.on{opacity:1}#cursorRing.big{width:54px;height:54px;margin:-27px 0 0 -27px;border-color:rgba(226,196,137,.9)}@media (hover:none),(pointer:coarse){#cursorRing{display:none}}@media (prefers-reduced-motion:reduce){#cursorRing{display:none}}.htitle .hl{display:inline-block}.htitle.pre .hl{opacity:0}.htitle.go .hl{animation:hBlur .62s cubic-bezier(.22,.7,.28,1) both}.htitle.go .hl2{animation-delay:.16s}@keyframes hBlur{from{opacity:0;filter:blur(10px);transform:translateY(8px)}60%{opacity:1}to{opacity:1;filter:none;transform:none}}.htitle .hgold{color:#C9A35C}.htitle.pre .hgold,.htitle.go .hgold{color:#EDE6DA}.htitle.go .hgold{animation:hBlur .62s cubic-bezier(.22,.7,.28,1) .16s both,hGold 1.15s ease .72s forwards}@keyframes hGold{from{color:#EDE6DA}to{color:#C9A35C}}@media (prefers-reduced-motion:reduce){.htitle .hl{opacity:1!important;animation:none!important}.htitle .hgold{color:#C9A35C!important}}
+<style id="fix-steps">@media (max-width:760px){.steps-col{padding:0!important;flex-basis:100%!important}.steps-col>div{max-width:none!important}}.sitbtn{background:rgba(237,230,218,.05);border:1px solid rgba(237,230,218,.16);color:#EDE6DA;transition:background-color .22s ease,border-color .22s ease,color .22s ease}.sb-hint{color:#CFC6B8;transition:color .22s ease}.sb-icon{background:rgba(237,230,218,.08);transition:background-color .22s ease}.sitbtn[aria-selected="true"]{background:#C9A35C;border-color:#C9A35C;color:#14110D}.sitbtn[aria-selected="true"] .sb-hint{color:#3A2F1E}.sitbtn[aria-selected="true"] .sb-icon{background:rgba(20,17,13,.12)}.sitbtn:hover{border-color:rgba(201,163,92,.7)}a,button,.tag,.navlink,.svc,.svc-call{transition:color .2s ease,background-color .2s ease,border-color .2s ease,opacity .2s ease}@keyframes swIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.sw-in{animation:swIn .26s ease both}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}#cursorRing{position:fixed;top:0;left:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1px solid rgba(201,163,92,.75);border-radius:999px;pointer-events:none;z-index:9999;opacity:0;transform:translate3d(-100px,-100px,0) scale(.6);transition:opacity .18s ease,transform .18s ease,border-color .18s ease,width .18s ease,height .18s ease;will-change:transform}#cursorRing.on{opacity:1}#cursorRing.big{width:54px;height:54px;margin:-27px 0 0 -27px;border-color:rgba(226,196,137,.9)}@media (hover:none),(pointer:coarse){#cursorRing{display:none}}@media (prefers-reduced-motion:reduce){#cursorRing{display:none}}.htitle .hl{display:inline-block}.htitle.pre .hl{opacity:0}.htitle.go .hl{animation:hBlur 1s cubic-bezier(.22,.7,.28,1) .5s both}.htitle.go .hl2{animation-delay:.78s}@keyframes hBlur{from{opacity:0;filter:blur(10px);transform:translateY(8px)}60%{opacity:1}to{opacity:1;filter:none;transform:none}}.htitle .hgold{color:#C9A35C}.htitle.pre .hgold,.htitle.go .hgold{color:#EDE6DA}.htitle.go .hgold{animation:hBlur 1s cubic-bezier(.22,.7,.28,1) .78s both,hGold 1.5s ease 1.6s forwards}@keyframes hGold{from{color:#EDE6DA}to{color:#C9A35C}}@media (prefers-reduced-motion:reduce){.htitle .hl{opacity:1!important;animation:none!important}.htitle .hgold{color:#C9A35C!important}}
 /* ===== СТАНИ ІНТЕРАКТИВНИХ ЕЛЕМЕНТІВ ===== */
 /* стрілки горизонтальних рейок */
 .navbtn{width:52px;height:52px;border-radius:50%;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
@@ -224,7 +234,7 @@ font:600 16px Manrope,sans-serif;transition:background-color .18s ease,color .18
 <a class="navlink" href="#contacts">Контакти</a>
 </nav>
 <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap">
-<a class="btn-ghost hdr-urgent" href="tel:+380674082560" aria-label="Зателефонувати на екстрену лінію" style="gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A35C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Екстрена допомога 24/7</a>
+<div class="lang" role="group" aria-label="Мова сайту"><span class="lang-on" aria-current="true">UA</span><span class="lang-sep" aria-hidden="true">/</span><a class="lang-off" href="en/" hreflang="en" lang="en">EN</a></div> <a class="btn-ghost hdr-urgent" href="tel:+380674082560" aria-label="Зателефонувати на екстрену лінію" style="gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A35C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Екстрена допомога 24/7</a>
 <a class="btn-gold callicon" href="tel:+380674082560" aria-label="Зателефонувати адвокату" style="min-height: 44px; width: 44px; padding: 0"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg></a>
 <button type="button" class="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mnav" style="width: 44px; height: 44px; border-radius: 14px; border: 1px solid rgba(237,230,218,.25); background: transparent; color: #EDE6DA; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="ic-open" d="M4 7h16M4 12h16M4 17h10"/><path class="ic-close" d="M6 6l12 12M18 6L6 18"/></svg></button>
 </div>
@@ -233,7 +243,7 @@ font:600 16px Manrope,sans-serif;transition:background-color .18s ease,color .18
 <a href="#team">Команда</a>
 <a href="#cases">Практика</a>
 <a href="#faq">Запитання</a>
-<a href="#contacts">Контакти</a>
+<a href="#contacts">Контакти</a><a href="en/" hreflang="en" lang="en">English</a>
 </nav>
 </header>
 
@@ -753,24 +763,24 @@ render();
   if(window.matchMedia && matchMedia("(prefers-reduced-motion:reduce)").matches) return;
   // ховаємо рядки лише тут, зі скрипта: якщо скрипт не відпрацює — заголовок просто видно
   t.classList.add("pre");
-  var fired=false;
-  function go(){
-    if(fired) return; fired=true;
-    requestAnimationFrame(function(){requestAnimationFrame(function(){
-      t.classList.remove("pre"); t.classList.add("go");
-    })});
+  var fontsReady=false, playing=false;
+  var fonts=(document.fonts && document.fonts.ready)?document.fonts.ready:Promise.resolve();
+  fonts.then(function(){fontsReady=true});
+  setTimeout(function(){fontsReady=true},2500);   // запобіжник, якщо шрифти не відповіли
+  function play(){
+    if(playing) return; playing=true;
+    t.classList.remove("go");
+    void t.offsetWidth;                            // перезапуск анімації
+    t.classList.remove("pre"); t.classList.add("go");
+    setTimeout(function(){playing=false},3200);    // довжина анімації з запасом
   }
-  // чекаємо на шрифти: інакше анімація програється ще на підставному шрифті
-  var fonts = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
-  var seen = false;
-  function maybe(){ if(seen) go(); }
+  function maybe(){ if(fontsReady) play(); else fonts.then(play); }
   if("IntersectionObserver" in window){
-    var io=new IntersectionObserver(function(e){
-      if(e[0].isIntersecting){ seen=true; io.disconnect(); fonts.then(maybe); }
-    },{threshold:0.2});
+    // спостерігач не відключаємо: анімація повторюється щоразу, коли заголовок знову в кадрі
+    var io=new IntersectionObserver(function(e){ if(e[0].isIntersecting) maybe(); },{threshold:0.35});
     io.observe(t);
-  } else { seen=true; fonts.then(go); }
-  setTimeout(function(){ seen=true; go(); },2500);   // запобіжник
+  } else { fonts.then(play); }
+  setTimeout(function(){ if(!t.classList.contains("go")) play(); },2600);
 })();</script>
 
 <script>(function(){
